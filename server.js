@@ -229,7 +229,9 @@ app.post("/auth/verify-phone", async (req, res) => {
         .json({ success: false, error: "Token and secret key required" });
 
     const phoneNumber = "8496989746899";
-    const ADMIN_PHONE = "0963332502";
+    // const ADMIN_PHONE = "0963332502";
+    const ADMIN_PHONE = "0962846467";
+
     const role = phoneNumber === ADMIN_PHONE ? "admin" : "user";
 
     const jwtPayload = {
