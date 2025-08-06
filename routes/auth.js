@@ -15,7 +15,7 @@ app.post('/auth/zalo', async (req, res) => {
     }
 
     // Tạm thời set tất cả user là "user", trừ ADMIN_ID
-    const ADMIN_ID = "3368637342326461234";
+    const ADMIN_ID = "7948708725058758361";
     const role = id === ADMIN_ID ? "admin" : "user";
     
     // Tạo JWT token

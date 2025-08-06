@@ -103,7 +103,7 @@ app.post("/auth/zalo", async (req, res) => {
         .status(400)
         .json({ success: false, error: "User ID is required" });
 
-    const ADMIN_ID = "3368637342326461234";
+    const ADMIN_ID = "7948708725058758361";
     const role = id === ADMIN_ID ? "admin" : "user";
 
     const jwtPayload = {
