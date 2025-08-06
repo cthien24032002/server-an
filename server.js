@@ -105,7 +105,7 @@ app.post("/auth/zalo", async (req, res) => {
 
     const ADMIN_ID = "7948708725058758361";
     // const ADMIN_ID = "3368637342326461234"
-    const role = id === ADMIN_ID ? "admin" : "user";
+    const role = id == ADMIN_ID ? "admin" : "user";
 
     const jwtPayload = {
       id,
