@@ -17,6 +17,7 @@ export default function handler(req, res) {
 
     // Xác định role (có thể mở rộng logic này)
     const ADMIN_ID = "7948708725058758361";
+    // const ADMIN_ID = "3368637342326461234"
     const role = zaloUserId === ADMIN_ID ? "admin" : "user";
 
     // Tạo JWT payload

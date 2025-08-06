@@ -104,6 +104,7 @@ app.post("/auth/zalo", async (req, res) => {
         .json({ success: false, error: "User ID is required" });
 
     const ADMIN_ID = "7948708725058758361";
+    // const ADMIN_ID = "3368637342326461234"
     const role = id === ADMIN_ID ? "admin" : "user";
 
     const jwtPayload = {
@@ -228,11 +229,13 @@ app.post("/auth/verify-phone", async (req, res) => {
         .status(400)
         .json({ success: false, error: "Token and secret key required" });
 
-    const phoneNumber = "8496989746899";
+    // const phoneNumber = "8496989746899";
     // const ADMIN_PHONE = "0963332502";
+    const phoneNumber = "0962846467";
     const ADMIN_PHONE = "0962846467";
 
     const role = phoneNumber === ADMIN_PHONE ? "admin" : "user";
+    // const role = phoneNumber === ADMIN_PHONE ? "admin" : "user";
 
     const jwtPayload = {
       id: `phone_${phoneNumber}`,
